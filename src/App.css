@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* Ajust later relative to the content and font-family */ 
 body{
   font-size: 16px;
   font-family: 'Inter', sans-serif;
@@ -12,7 +13,7 @@ body{
   min-height: 100vh;
   background-color: #002922;
 }
-
+/* Nav Bar ajustments and styling overall*/
 .navBar {
   height: 120px;
   display: flex;
@@ -25,7 +26,12 @@ body{
   padding:  0 20px;
   z-index: 1;
 }
-
+/* Nav Links ajustments and placement*/
+.navLinks {
+  display: flex;
+  gap: 50px;
+}
+/* Footer ajustments overall*/
 .footer {
   display: flex;
   align-items: center;
@@ -37,51 +43,51 @@ body{
   bottom: 0;
   text-align: center;
 }
+/* Footer github button */
+    .Btn {
+      border: none;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition-duration: .4s;
+      cursor: pointer;
+      position: relative;
+      background-color: #002922;
+      overflow: hidden;
+    }
 
-.Btn {
-  border: none;
-  border-radius: 50%;
-  width: 45px;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition-duration: .4s;
-  cursor: pointer;
-  position: relative;
-  background-color: #002922;
-  overflow: hidden;
-}
+    .svgIcon {
+      transition-duration: .3s;
+    }
 
-.svgIcon {
-  transition-duration: .3s;
-}
+    .svgIcon path {
+      fill: white;
+    }
 
-.svgIcon path {
-  fill: white;
-}
+    .text {
+      position: absolute;
+      color: rgb(255, 255, 255);
+      width: 120px;
+      font-weight: 600;
+      opacity: 0;
+      transition-duration: .4s;
+    }
 
-.text {
-  position: absolute;
-  color: rgb(255, 255, 255);
-  width: 120px;
-  font-weight: 600;
-  opacity: 0;
-  transition-duration: .4s;
-}
+    .Btn:hover {
+      width: 110px;
+      transition-duration: .4s;
+      border-radius: 30px;
+    }
 
-.Btn:hover {
-  width: 110px;
-  transition-duration: .4s;
-  border-radius: 30px;
-}
+    .Btn:hover .text {
+      opacity: 1;
+      transition-duration: .4s;
+    }
 
-.Btn:hover .text {
-  opacity: 1;
-  transition-duration: .4s;
-}
-
-.Btn:hover .svgIcon {
-  opacity: 0;
-  transition-duration: .3s;
-}
+    .Btn:hover .svgIcon {
+      opacity: 0;
+      transition-duration: .3s;
+    }
