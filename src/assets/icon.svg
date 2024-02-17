@@ -1,0 +1,18 @@
+<svg width="304" height="409" viewBox="0 0 304 409" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M179 259L277 329V80L179 149V259Z" fill="#76CBB0"/>
+<path d="M28 329L124 259V149L28 80V329Z" fill="#21765B"/>
+<path d="M124 0V149L28 80L124 0Z" fill="#76CBB0"/>
+<path d="M124 409V259L28 329L124 409Z" fill="#103B2E"/>
+<path d="M179 0V149L277 80L179 0Z" fill="#BAE5D8"/>
+<path d="M179 409V259L277 329L179 409Z" fill="#21765B"/>
+<rect x="124" y="149" width="55" height="110" fill="#31B189"/>
+<path d="M55 80.5C39.8164 80.5 27.5 92.8164 27.5 108C27.5 92.8164 15.1836 80.5 0 80.5C15.1836 80.5 27.5 68.1836 27.5 53C27.5 68.1836 39.8164 80.5 55 80.5Z" fill="white"/>
+<path d="M304 329.5C288.816 329.5 276.5 341.816 276.5 357C276.5 341.816 264.184 329.5 249 329.5C264.184 329.5 276.5 317.184 276.5 302C276.5 317.184 288.816 329.5 304 329.5Z" fill="white"/>
+<mask id="mask0_29_80" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="28" y="0" width="249" height="409">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M124 149V0L28 80V329L124 409V259H179V409L277 329V80L179 0V149H124Z" fill="#4CDB7C"/>
+</mask>
+<g mask="url(#mask0_29_80)">
+<path opacity="0.5" d="M299.939 63.0003L-107.605 201.105L-82.9714 273.8L324.573 135.695L299.939 63.0003Z" fill="white"/>
+<path opacity="0.25" d="M379.391 145.33L-126 316.592L-112.069 357.703L393.323 186.441L379.391 145.33Z" fill="white"/>
+</g>
+</svg>
