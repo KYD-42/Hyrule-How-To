@@ -11,6 +11,8 @@ import EquipmentList from "./Pages/EquipmentList";
 import EquipmentDetails from "./Pages/EquipmentDetails";
 import MonsterList from "./Pages/MonsterList";
 import MonsterDetails from "./Pages/MonsterDetails";
+import TreasureList from "./Pages/TreasureList";
+import TreasureDetails from "./Pages/TreasureDetails";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
         <Route path="/equipment/:id" element={<EquipmentDetails />} />
         <Route path="/monsters" element={<MonsterList />} />
         <Route path="/monsters/:id" element={<MonsterDetails />} />
+        <Route path="/treasure" element={<TreasureList />} />
+        <Route path="/treasure/:id" element={<TreasureDetails />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

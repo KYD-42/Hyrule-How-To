@@ -6,9 +6,12 @@ function NavBar() {
         <img src="src/assets/logo-w.svg" height={80} />
       </NavLink>
       <section className="navLinks">
-        <p>About</p>
-        <p>Home</p>
-        <p>Not Found</p>
+        <NavLink to="/">
+          <p>Home</p>
+        </NavLink>
+        <NavLink to="/about">
+          <p>About</p>
+        </NavLink>
       </section>
     </section>
   );

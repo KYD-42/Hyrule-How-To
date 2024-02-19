@@ -4,32 +4,32 @@ import axios from "axios";
 
 const API_URL = "https://botw-compendium.herokuapp.com/api/v3/compendium/entry";
 
-function MonsterDetails() {
-  const [monster, setMonster] = useState({});
+function TreasureDetails() {
+  const [treasure, setTreasure] = useState({});
   const { id } = useParams();
 
   useEffect(() => {
     axios
       .get(`${API_URL}/${id}`) 
       .then((response) => {
-        setMonster(response.data.data)
+        setTreasure(response.data.data)
       })
      .catch((error) => console.log(error));
   }, []);
 
   return (
     <div>
-      {monster && 
+      {treasure && 
         <section style={{color: "white", marginTop: "200px", textAlign: "center"}}> {/* to replace on CSS */}
-          <img src={monster.image} alt={monster.name} />
-          <h1>{monster.name}</h1>
-          <h3>Locations: {monster.common_locations}</h3>
-          <p>{monster.description}</p>
-          <p>Drops: {monster.drops}</p>
+          <img src={treasure.image} alt={treasure.name} />
+          <h1>{treasure.name}</h1>
+          <h3>{treasure.common_locations}</h3>
+          <p>{treasure.description}</p>
+          <p>Drops: {treasure.drops}</p>
         </section>
       }
     </div>
   );
 }
 
-export default MonsterDetails;
+export default TreasureDetails;
