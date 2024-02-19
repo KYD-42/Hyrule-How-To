@@ -13,6 +13,8 @@ import MonsterList from "./Pages/MonsterList";
 import MonsterDetails from "./Pages/MonsterDetails";
 import TreasureList from "./Pages/TreasureList";
 import TreasureDetails from "./Pages/TreasureDetails";
+import HintsList from "./Pages/HintsList";
+import HintsDetails from "./Pages/HintsDetails";
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
         <Route path="/monsters/:id" element={<MonsterDetails />} />
         <Route path="/treasure" element={<TreasureList />} />
         <Route path="/treasure/:id" element={<TreasureDetails />} />
+        <Route path="/hints" element={<HintsList />} />
+        <Route path="/hints/:id" element={<HintsDetails />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

@@ -19,6 +19,9 @@ function Home() {
         <Link className="introCard" to="/treasure">
           <h2>Treasure</h2>
         </Link>
+        <Link className="introCard" to="/hints">
+          <h2>Hints</h2>
+        </Link>
       </div>
     </section>
   );
