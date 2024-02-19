@@ -7,6 +7,10 @@ import NotFound from "./Pages/NotFound";
 import { Routes, Route} from "react-router-dom";
 import CreatureList from "./Pages/CreatureList";
 import CreatureDetails from "./Pages/CreatureDetails";
+import EquipmentList from "./Pages/EquipmentList";
+import EquipmentDetails from "./Pages/EquipmentDetails";
+import MonsterList from "./Pages/MonsterList";
+import MonsterDetails from "./Pages/MonsterDetails";
 
 function App() {
   return (
@@ -16,6 +20,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/creatures" element={<CreatureList />} />
         <Route path="/creatures/:id" element={<CreatureDetails />} />
+        <Route path="/equipment" element={<EquipmentList />} />
+        <Route path="/equipment/:id" element={<EquipmentDetails />} />
+        <Route path="/monsters" element={<MonsterList />} />
+        <Route path="/monsters/:id" element={<MonsterDetails />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
