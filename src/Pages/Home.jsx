@@ -1,9 +1,10 @@
+import CreatureList from "./CreatureList";
 function Home() {
-    return (
-        <section className="homePage">
-            <h1>Home</h1>
-        </section>
-    );
+  return (
+    <section className="homePage">
+      <CreatureList />
+    </section>
+  );
 }
 
 export default Home;
