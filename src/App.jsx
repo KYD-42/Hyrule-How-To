@@ -16,6 +16,7 @@ import TreasureDetails from "./Pages/TreasureDetails";
 import HintsList from "./Pages/HintsList";
 import HintsDetails from "./Pages/HintsDetails";
 import AddHints from "./Pages/AddHints";
+import EditProjectPage from "./Pages/EditProjectPage";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path="/hints" element={<HintsList />} />
         <Route path="/add-hints" element={<AddHints />} />
         <Route path="/hints/:id" element={<HintsDetails />} />
+        <Route path="/edit-project/:id" element={<EditProjectPage />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
