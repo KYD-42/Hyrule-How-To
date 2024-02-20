@@ -10,7 +10,7 @@ function HintsDetails() {
 
   useEffect(() => {
     axios
-      .get(`${API_URL}/${id}`)
+      .get(`${API_URL}/hints/${id}`)
       .then((response) => {
         setHint(response.data);
       })
@@ -19,14 +19,12 @@ function HintsDetails() {
   return (
     <div>
       {hint && (
-        <section
-          style={{ color: "white", marginTop: "200px", textAlign: "center" }}
-        >
-          {" "}
-          {/* to replace on CSS */}
-          <img src={hint.image} alt={hint.title} />
+        <section className="detailsAll">
+          <img className="detailsImg" src={hint.image} alt={hint.title} />
+          <div className="detailsInfo">
           <h1>{hint.title}</h1>
           <p>{hint.description}</p>
+          </div>
         </section>
       )}
     </div>

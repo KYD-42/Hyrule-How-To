@@ -20,12 +20,14 @@ function TreasureDetails() {
   return (
     <div>
       {treasure && 
-        <section style={{color: "white", marginTop: "200px", textAlign: "center"}}> {/* to replace on CSS */}
-          <img src={treasure.image} alt={treasure.name} />
+        <section className="detailsAll">
+          <img className="detailsImg" src={treasure.image} alt={treasure.name} />
+          <div className="detailsInfo">
           <h1>{treasure.name}</h1>
           <h3>{treasure.common_locations}</h3>
           <p>{treasure.description}</p>
           <p>Drops: {treasure.drops}</p>
+          </div>
         </section>
       }
     </div>

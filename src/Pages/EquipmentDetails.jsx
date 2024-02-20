@@ -20,15 +20,13 @@ function EquipmentDetails() {
   return (
     <div>
       {equipment && (
-        <section
-          style={{ color: "white", marginTop: "200px", textAlign: "center" }}
-        >
-          {" "}
-          {/* to replace on CSS */}
-          <img src={equipment.image} alt={equipment.name} />
+        <section className="detailsAll">
+          <img className="detailsImg" src={equipment.image} alt={equipment.name} />
+          <div className="detailsInfo">
           <h1>{equipment.name}</h1>
           <h3>{equipment.common_locations}</h3>
           <p>{equipment.description}</p>
+          </div>
         </section>
       )}
     </div>

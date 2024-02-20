@@ -24,7 +24,7 @@ function HyruleTreasure() {
           <article className="cardID" key={treasure.id}>
             <img className="cardImg" src={treasure.image} alt={treasure.name} />
             <h2 className="cardName">{treasure.name}</h2>
-            <Link to={`/equipment/${treasure.id}`}><button>View</button></Link>
+            <Link to={`/equipment/${treasure.id}`}><button className="viewButton">View</button></Link>
           </article>
         ))}
     </section>

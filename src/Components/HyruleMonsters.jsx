@@ -24,7 +24,7 @@ function HyruleMonsters() {
           <article className="cardID" key={monster.id}>
             <img className="cardImg" src={monster.image} alt={monster.name} />
             <h2 className="cardName">{monster.name}</h2>
-            <Link to={`/monsters/${monster.id}`}><button>View</button></Link>
+            <Link to={`/monsters/${monster.id}`}><button className="viewButton">View</button></Link>
           </article>
         ))}
     </section>

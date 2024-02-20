@@ -20,13 +20,15 @@ function CreatureDetails() {
   return (
     <div>
       {creature && 
-        <section style={{color: "white", marginTop: "200px", textAlign: "center"}}> {/* to replace on CSS */}
-          <img src={creature.image} alt={creature.name} />
-          <h1>{creature.name}</h1>
-          <h3>{creature.common_locations}</h3>
-          <p>{creature.description}</p>
-          <p>Edible: {creature.edible ? 'Yes' : 'No'}</p>
-          <p>Cooking Effect: {creature.cooking_effect}</p>
+        <section className="detailsAll">
+          <img className="detailsImg" src={creature.image} alt={creature.name} />
+          <div className="detailsInfo">
+            <h1>{creature.name}</h1>
+            <h3>{creature.common_locations}</h3>
+            <p>{creature.description}</p>
+            <p>Edible: {creature.edible ? 'Yes' : 'No'}</p>
+            <p>Cooking Effect: {creature.cooking_effect}</p>
+          </div>
         </section>
       }
     </div>

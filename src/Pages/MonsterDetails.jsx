@@ -20,12 +20,14 @@ function MonsterDetails() {
   return (
     <div>
       {monster && 
-        <section style={{color: "white", marginTop: "200px", textAlign: "center"}}> {/* to replace on CSS */}
-          <img src={monster.image} alt={monster.name} />
+        <section className="detailsAll">
+          <img className="detailsImg" src={monster.image} alt={monster.name} />
+          <div className="detailsInfo">
           <h1>{monster.name}</h1>
           <h3>Locations: {monster.common_locations}</h3>
           <p>{monster.description}</p>
           <p>Drops: {monster.drops}</p>
+          </div>
         </section>
       }
     </div>

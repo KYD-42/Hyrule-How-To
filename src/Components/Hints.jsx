@@ -7,7 +7,7 @@ function Hints() {
   const [error, setError] = useState(null);
   useEffect(() => {
     axios
-      .get(`${API_URL}/tips`)
+      .get(`${API_URL}/hints`)
       .then((response) => {
         setHints(response.data);
       })
@@ -23,7 +23,7 @@ function Hints() {
           <article className="cardID" key={hint.id}>
             <img className="cardImg" src={hint.image} alt={hint.name} />
             <h2 className="cardName">{hint.title}</h2>
-            <Link to={`/hints/${hint.id}`}><button>View</button></Link>
+            <Link to={`/hints/${hint.id}`}><button className="viewButton">View</button></Link>
           </article>
         ))}
     </section>
