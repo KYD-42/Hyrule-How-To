@@ -236,3 +236,96 @@ body {
   flex: 2; /* Make the text take up twice as much space as the image */
   padding: 0 20px; /* Add some spacing between the image and text */
 }
+
+.form {
+  margin-top: 500px;
+  margin-bottom: 75px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-family: "Overpass", sans-serif;
+  gap: 10px;
+}
+
+.form_label {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-left: 20px;
+}
+
+.form_btn {
+  padding: 12.5px 30px;
+  border: 0;
+  border-radius: 100px;
+  background-color: #002922;
+  color: #F1DBAE;
+  font-weight: Bold;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.form_btn:hover {
+  background-color: #F2AB2D;
+  transform: scale(1.1);
+  color: #002922;
+}
+
+.form_btn:active {
+  background-color: #F35200;
+  transition: all 0.25s;
+  color: #F1DBAE;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
+  cursor: pointer;
+}
+
+.addButton-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 75px;
+}
+
+.addButton {
+  font-family: "Overpass", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #002922;
+  padding: 12.5px 30px;
+  border: 0;
+  border-radius: 100px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.form_btn {
+  padding: 12.5px 30px;
+  border: 0;
+  border-radius: 100px;
+  background-color: #002922;
+  color: #F1DBAE;
+  font-weight: Bold;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  cursor: pointer;
+}
+
+.form_btn:hover {
+  background-color: #F2AB2D;
+  transform: scale(1.1);
+  color: #002922;
+}
+
+.form_btn:active {
+  background-color: #F35200;
+  transition: all 0.25s;
+  color: #F1DBAE;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
+  cursor: pointer;
+}
