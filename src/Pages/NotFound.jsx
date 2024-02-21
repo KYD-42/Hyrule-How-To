@@ -2,7 +2,7 @@ function NotFound() {
   return (
     <section className="notFoundPage">
       <h1 className="title">Not Found</h1>
-      <img src="src/assets/error.jpg" alt="you found a dead link" />
+      <img src="Hyrule-How-To/src/assets/error.jpg" alt="you found a dead link" />
     </section>
   );
 }
