@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-const API_URL = "http://localhost:9000";
+const API_URL = "https://json-server-backend-hyrule-how-to.onrender.com";
 
 function HintsDetails() {
   const [hint, setHint] = useState({});

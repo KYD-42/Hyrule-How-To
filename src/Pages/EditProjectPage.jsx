@@ -2,7 +2,7 @@ import {useEffect, useState} from 'react';
 import {useParams, useNavigate} from 'react-router-dom';
 import axios from 'axios';
 
-const API_URL = "http://localhost:9000";
+const API_URL = "https://json-server-backend-hyrule-how-to.onrender.com";
 function EditProjectPage(){
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
