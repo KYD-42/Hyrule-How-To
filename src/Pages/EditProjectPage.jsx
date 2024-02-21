@@ -38,33 +38,42 @@ function EditProjectPage(){
   }
   
   return (
-    <article>
+    <div className="form-container">
       <form className='form'onSubmit={handleSubmit}>
-        <label className='form_label'>Title</label>
+        <div className="form-group">
+        <label>Title</label>
         <input
           type="text"
           name="title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
-        <label className='form_label'>Description</label>
+        </div>
+        <div className="form-group">
+        <label>Description</label>
         <input
           type="text"
           name="description"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
         />
-        <label className='form_label'>Image</label>
+        </div>
+        <div className="form-group">
+        <label>Image</label>
         <input
           type="text"
           name="image"
           value={image}
           onChange={(e) => setImage(e.target.value)}
         />
-        <button className='form_btn' type = "submit">Edit Page</button>
+        </div>
+        <button className='form-submit-btn' type = "submit">Edit Page</button>
       </form>
-      <button onClick={deleteProject}>Delete Page</button>
-    </article>
+      <button className='form-submit-btn'onClick={deleteProject}>Delete Page</button>
+    </div>
   );
 }
 export default EditProjectPage;
+
+
+

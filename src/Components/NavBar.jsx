@@ -1,16 +1,20 @@
 import { NavLink } from "react-router-dom";
+
 function NavBar() {
   return (
     <section className="navBar">
       <NavLink to="/">
-        <img src="src/assets/logo-w.svg" height={80} />
+        <img src="src/assets/logotype-dark.svg" height={50} alt="Logo" />
       </NavLink>
       <section className="navLinks">
         <NavLink to="/">
-          <p>Home</p>
+        <button className="button">Home</button>
         </NavLink>
         <NavLink to="/about">
-          <p>About</p>
+        <button className="button">About</button>
+        </NavLink>
+        <NavLink to="/add-hints">
+        <button className="button">Create</button>
         </NavLink>
       </section>
     </section>

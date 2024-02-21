@@ -22,15 +22,23 @@ function AddHints(){
 
     }
     return (
+    <div className="form-container">
       <form className='form'onSubmit={handleSubmit}>
-        <label className='form_label'>Title</label>
+        <div className="form-group">
+        <label>Title</label>
         <input value = {title} name="title" type="text" required onChange={(e)=> setTitle(e.target.value)}/>
-        <label className='form_label'>Description</label>
+        </div>
+        <div className="form-group">
+        <label>Description</label>
         <input value = {description} name="description" type="text" required onChange={(e)=> setDescription(e.target.value)} />
-        <label className='form_label'>Image</label>
+        </div>
+        <div className="form-group">
+        <label>Image</label>
         <input value = {image} name="image" type="text" required onChange={(e)=> setImage(e.target.value)} />
-        <button className='form_btn' type="submit">Add Hint</button>
+        </div>
+        <button className='form-submit-btn' type="submit">Add Hint</button>
       </form>
+      </div>
     );
 }
 
