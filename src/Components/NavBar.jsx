@@ -4,7 +4,7 @@ function NavBar() {
   return (
     <section className="navBar">
       <NavLink to="/">
-        <img type="image/svg+xml" src="/src/assets/logotype-dark.svg" height={50} alt="Logo" />
+        <img src="src/assets/logotype-dark.svg" height={50} alt="Logo" />
       </NavLink>
       <section className="navLinks">
         <NavLink to="/">

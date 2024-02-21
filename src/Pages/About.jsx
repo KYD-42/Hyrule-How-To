@@ -1,7 +1,7 @@
 function About() {
   return (
     <div className="about">
-      <img type="image/svg+xml" src="/src/assets/logo-w.svg" height={100} />
+      <img src="src/assets/logo-w.svg" height={100} />
       <p>
       Welcome to Hyrule How-to, your go-to for all things "The Legend of Zelda: Tears of the Kingdom"! Need tips on defeating Bokoblins effortlessly? Or navigating the Lost Woods sans confusion? Look no further! Hyrule How-to has you covered like a trusty Hylian Shield. Join us on GitHub as we chronicle Link's adventures with humor and chaos. Whether seasoned hero or fresh-faced adventurer, grab your Master Sword, polish those boots, and let's embark on this epic journey through Hyrule! Hyrule How-to: where even Ganon takes notes!
       </p>
