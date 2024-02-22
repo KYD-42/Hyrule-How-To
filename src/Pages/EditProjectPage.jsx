@@ -49,7 +49,7 @@ function EditProjectPage(){
           onChange={(e) => setTitle(e.target.value)}
         />
         </div>
-        <div className="form-group">
+        <div className="form-group-description">
         <label>Description</label>
         <input
           type="text"
@@ -74,6 +74,3 @@ function EditProjectPage(){
   );
 }
 export default EditProjectPage;
-
-
-

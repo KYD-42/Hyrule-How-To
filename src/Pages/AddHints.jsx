@@ -28,7 +28,7 @@ function AddHints(){
         <label>Title</label>
         <input value = {title} name="title" type="text" required onChange={(e)=> setTitle(e.target.value)}/>
         </div>
-        <div className="form-group">
+        <div className="form-group-description">
         <label>Description</label>
         <input value = {description} name="description" type="text" required onChange={(e)=> setDescription(e.target.value)} />
         </div>

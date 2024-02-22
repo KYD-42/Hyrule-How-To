@@ -5,6 +5,7 @@ function Home() {
     <section /* className="homePage" */>
       <div className="hero">
         <img className="logoMain" src="/assets/logo-w.svg" alt="Hyrule How-To"/>
+      <div><h1 className="heroHeader">Welcome to Hyrule How-To!</h1><br /><p className="heroText">A place for all things "The Legend of Zelda: Tears of the Kingdom"</p></div>
       </div>
       <div className="allCards">
         <Link to="/creatures">
