@@ -12,7 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #FFE3B3;
+  background-color: #FFC872;
 /*   background-image: url(../src/assets/background.webp); */
 }
 
@@ -40,7 +40,7 @@ body {
   color: #002922;
   font-size: 16px;
   font-family: 'Lato', sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   background-color: #7ACE67;
   border: 1.5px solid #002922;
   border-radius: 5px;
@@ -92,12 +92,12 @@ body {
   color: #002922;
   font-size: 32px;
   font-family: 'Lato', sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   background-color: #7ACE67;
   border: 2px solid #002922;
-  border-radius: 5px;
+  border-radius: 6px;
   padding: 10px;
-  box-shadow: 6px 6px 0px #002922;
+  box-shadow: 8px 8px 0px #002922;
   transition: all .1s;
   cursor: pointer;
 }
@@ -110,48 +110,50 @@ body {
 
 .title {
   font-family: jomhuria;
-  font-size: 50px;
+  font-size: 140px;
   color: #002922;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 160px;
 }
 
 .hyruleCard {
   display: flex;
   flex-wrap: wrap;
-  /* Allow cards to wrap to the next line */
   justify-content: center;
-  /* Center cards horizontally */
   margin-top: 20px;
   margin-bottom: 100px;
 }
 
     .cardID {
       --main-color: #002922;
-      --bg-color: #FCF7ED;
+      --bg-color: #7ACE67;
       position: relative;
       width: 300px;
-      height: 300px;
+      height: 400px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      border-radius: 20px;
+      border-radius: 10px;
       background: var(--bg-color);
       margin: 1rem;
-      padding: 0.3rem;
+      box-shadow: 15px 15px 0px #002922;
+      border: 4px solid #002922;
     }
 
     .cardImg {
       width: 100%;
       height: 60%;
       object-fit: cover;
-      border-radius: 20px 20px 0 0;
+      border-radius: 5px 5px 0 0;
+      border-bottom: 4px solid #002922;
     }
 
     .cardName {
-      margin-top: 1rem;
-      font-size: 1rem;
-      font-weight: 600;
+      margin-top: 2rem;
+      font-family: 'Lato', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
       color: var(--main-color);
       text-align: center;
     }
@@ -159,16 +161,25 @@ body {
     .viewButton {
       position: relative;
       margin-top: 2rem;
-      margin-bottom: 1rem;
-      padding: 0.5rem 1rem;
-      border: none;
+      margin-bottom: 2rem;
+      color: #002922;
+      font-size: 16px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      background-color: #ffffff;
+      border: 2px solid #002922;
       border-radius: 5px;
-      background-color: var(--main-color);
-      color: var(--bg-color);
-      font-size: 1rem;
-      font-weight: 600;
+      padding: 10px;
+      box-shadow: 6px 6px 0px #002922;
+      transition: all .1s;
       cursor: pointer;
     }
+
+    .viewButton:active {
+      box-shadow: 2px 2px 0px #002922;
+      position: relative;
+      top: 2px;
+     }
 
 .notFoundPage {
   display: flex;
@@ -188,7 +199,6 @@ body {
   width: 100vw;
   position: fixed;
   bottom: 0;
-  text-align: center;
   border-top: 1.5px solid #002922;
   padding: 0 50px;
   color: #002922;
@@ -213,7 +223,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding-inline: 400px;
+  padding-inline: 200px;
   padding-block: 200px;
 }
 
@@ -360,20 +370,28 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-  margin-bottom: 75px;
+  margin-bottom: 50px;
 }
 
 .addButton {
-  font-family: "Overpass", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
   color: #002922;
-  padding: 12.5px 30px;
-  border: 0;
-  border-radius: 100px;
-  background-color: #ffffff;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  background-color: #7ACE67;
+  border: 2px solid #002922;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 6px 6px 0px #002922;
+  transition: all .1s;
   cursor: pointer;
 }
+
+.addButton:active {
+  box-shadow: 2px 2px 0px #002922;
+  position: relative;
+  top: 2px;
+ }
 
 .form_btn {
   padding: 12.5px 30px;

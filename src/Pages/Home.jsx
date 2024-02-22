@@ -4,7 +4,7 @@ function Home() {
   return (
     <section /* className="homePage" */>
       <div className="hero">
-        <img className="logoMain" src="src/assets/logo-w.svg" alt="Hyrule How-To"/>
+        <img className="logoMain" src="/assets/logo-w.svg" alt="Hyrule How-To"/>
       </div>
       <div className="allCards">
         <Link to="/creatures">

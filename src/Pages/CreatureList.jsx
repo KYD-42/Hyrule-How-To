@@ -3,7 +3,7 @@ import HyruleCreatures from "../Components/HyruleCreatures";
 function CreatureList() {
   return (
     <section>
-      <h1 className="title">Creatures</h1>
+      <div className="title">Creatures</div>
       <HyruleCreatures />
     </section>
   );

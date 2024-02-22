@@ -3,7 +3,7 @@ import HyruleMonsters from "../Components/HyruleMonsters";
 function MonsterList() {
   return (
     <section>
-      <h1 className="title">Monsters</h1>
+      <div className="title">Monsters</div>
       <HyruleMonsters />
     </section>
   );

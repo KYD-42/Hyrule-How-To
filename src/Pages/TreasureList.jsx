@@ -3,7 +3,7 @@ import HyruleTreasure from "../Components/HyruleTreasure";
 function TreasureList() {
   return (
     <section>
-      <h1 className="title">Treasure</h1>
+      <div className="title">Treasure</div>
       <HyruleTreasure />
     </section>
   );
