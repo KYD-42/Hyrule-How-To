@@ -24,9 +24,9 @@ function HintsDetails() {
         <section className="detailsAll">
           <img className="detailsImg" src={hint.image} alt={hint.title} />
           <div className="detailsInfo">
-          <h1>{hint.title}</h1>
+          <h1 style={{fontSize: '50px', textTransform: 'capitalize'}}>{hint.title}</h1>
           <p>{hint.description}</p>
-          <Link to= {`/edit-project/${id}`}>Edit Hint</Link>
+          <Link to= {`/edit-project/${id}`}><button style={{marginTop: '20px'}}className="addButton"> Edit Hint </button></Link>
           </div>
         </section>
       )}

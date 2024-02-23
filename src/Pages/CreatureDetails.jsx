@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const API_URL = "https://botw-compendium.herokuapp.com/api/v3/compendium/entry";
 
@@ -23,11 +24,12 @@ function CreatureDetails() {
         <section className="detailsAll">
           <img className="detailsImg" src={creature.image} alt={creature.name} />
           <div className="detailsInfo">
-            <h1>{creature.name}</h1>
-            <h3>{creature.common_locations}</h3>
+            <h1 style={{fontSize: '50px', textTransform: 'capitalize'}}>{creature.name}</h1>
+            <h3>Location(s): {creature.common_locations ? creature.common_locations : 'N/A'}</h3>
             <p>{creature.description}</p>
             <p>Edible: {creature.edible ? 'Yes' : 'No'}</p>
-            <p>Cooking Effect: {creature.cooking_effect}</p>
+            <p style={{textTransform: 'capitalize'}}>Cooking Effect: {creature.cooking_effect ? creature.cooking_effect : 'N/A'}</p>
+            <Link to= {`/creatures`}><button style={{marginTop: '20px'}}className="addButton"> Back </button></Link>
           </div>
         </section>
       }

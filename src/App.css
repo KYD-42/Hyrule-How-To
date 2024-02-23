@@ -56,9 +56,31 @@ body {
   top: 2px;
  }
 
+ .button-error {
+  color: #002922;
+  font-size: 32px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  background-color: #7ACE67;
+  border: 2px solid #002922;
+  border-radius: 6px;
+  padding: 10px;
+  box-shadow: 8px 8px 0px #002922;
+  transition: all .1s;
+  cursor: pointer;
+  margin-top: 50px;
+ }
+ 
+ .button-error:active {
+  box-shadow: 2px 2px 0px #002922;
+  position: relative;
+  top: 2px;
+ }
+
 /* HOME PAGE */
 
 .hero {
+  position: relative; /* Position relative to allow absolute positioning of pseudo-element */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -68,8 +90,12 @@ body {
   padding-left: 50px;
   padding-right: 50px;
   border-bottom: 1.5px solid #002922;
+  background-image: url(../public/assets/featured-zelda-tearskingdom-artwork-01.png);
   background-color: #002922;
+  background-size: cover;
+  background-position: center;
   height: 70vh;
+  width: 100vw;
   gap: 100px;
 }
 
@@ -136,6 +162,14 @@ body {
   color: #002922;
   text-align: center;
   margin-top: 160px;
+}
+
+.title-error{
+  font-family: jomhuria;
+  font-size: 100px;
+  color: #002922;
+  text-align: center;
+  margin-top: 100px;
 }
 
 .hyruleCard {
@@ -242,19 +276,31 @@ body {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-inline: 200px;
   padding-block: 200px;
 }
 
+.authors {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
 .about p {
-  font-size: 20px;
-  color: #ffffff;
-  margin: 10px;
-  font-family: "Overpass", sans-serif;
+  color: #002922;
+  margin: 20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
   text-align: center;
+  line-height: 1.5;
 }
 
 .about img {
@@ -262,27 +308,32 @@ body {
 }
 
     .detailsAll {
-      display: flex; /* Use flexbox to align items */
+      display: flex;
       justify-content: center; /* Horizontally center the content */
       align-items: center; /* Vertically center the content */
       color: white;
-      margin-top: 200px;
+      margin-block: 300px;
+      margin-inline: 200px;
+      gap: 32px;
     }
 
     .detailsImg {
       flex: 1;
-      max-width: 40%; /* Set a maximum width for the image */
+      max-width: 50%;
       margin-left: 80px;
+      border: 3px solid #002922;
+      border-radius: 8px;
+      box-shadow: 16px 16px 0px #002922;
     }
 
     .detailsInfo {
-      flex: 2; /* Make the text take up twice as much space as the image */
+      flex: 2;
       text-align: left;
-      font-size: 20px;
-      font-family: "Overpass", sans-serif;
-      color: #ffffff;
+      font-family: "Lato", sans-serif;
+      color: #002922;
       margin-left: 50px;
-      margin-right: 80px;
+      font-size: 20px;
+      line-height: 1.5;
     }
 
 
@@ -489,5 +540,11 @@ body {
   .heroText {
     font-size: 18px;
     line-height: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    max-width: 100%;
   }
 }

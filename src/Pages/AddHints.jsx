@@ -36,7 +36,7 @@ function AddHints(){
         <label>Image</label>
         <input value = {image} name="image" type="text" required onChange={(e)=> setImage(e.target.value)} />
         </div>
-        <button className='form-submit-btn' type="submit">Add Hint</button>
+        <button className='form-submit-btn' type="submit">.°˖✧ Add Hint ✧˖°.</button>
       </form>
       </div>
     );

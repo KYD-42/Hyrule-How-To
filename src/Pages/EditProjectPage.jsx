@@ -67,9 +67,9 @@ function EditProjectPage(){
           onChange={(e) => setImage(e.target.value)}
         />
         </div>
-        <button className='form-submit-btn' type = "submit">Edit Page</button>
+        <button className='form-submit-btn' type = "submit">.°˖✧ Edit ✧˖°.</button>
       </form>
-      <button className='form-submit-btn'onClick={deleteProject}>Delete Page</button>
+      <button className='form-submit-btn'onClick={deleteProject}>✖ Delete ✖</button>
     </div>
   );
 }
